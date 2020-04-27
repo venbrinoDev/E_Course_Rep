@@ -26,21 +26,23 @@
         android:layout_marginTop="200dp"
         />
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:layout_width="85dp"
-        android:layout_height="85dp"
-        android:src="@color/colorAccent"
+    <RelativeLayout
+        android:layout_width="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="250dp"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="LOGO"
-        android:textColor="@color/black"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="285dp"
-        />
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@color/colorAccent"
+            />
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:layout_width="63dp"
+            android:layout_height="63dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/splashingb" />
+    </RelativeLayout>
 
     <TextView
         android:layout_width="wrap_content"
