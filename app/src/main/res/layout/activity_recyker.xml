@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/idLayout"
+    android:background="#D6D4D4"
+    tools:context=".Recyker">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="4dp"
+        android:layout_marginTop="5dp"
+        android:scrollbars="vertical"
+        android:background="#D6D4D4"
+         android:id="@+id/recyclerView"
+        />
+       <RelativeLayout
+           android:id="@+id/noSetAlarm"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+            android:layout_gravity="center"
+           >
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_marginTop="10dp"
+               android:layout_centerHorizontal="true"
+               android:text="No Alarm Set"
+               android:textSize="20sp"
+               android:layout_marginBottom="5dp"
+               android:textStyle="bold"
+               android:textColor="@color/black"
+               android:id="@+id/noALrmText"
+               android:layout_height="wrap_content"></TextView>
+           <ImageView
+               android:layout_below="@id/noALrmText"
+               android:layout_width="wrap_content"
+               android:layout_centerHorizontal="true"
+               android:id="@+id/imageforAlamrSet"
+               android:layout_height="wrap_content"
+               android:src="@drawable/ic_no_notification"
+               ></ImageView>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/imageforAlamrSet"
+               android:layout_marginTop="5dp"
+               android:layout_centerHorizontal="true"
+               android:textColor="@color/black"
+               android:text="Click icon below to set the alarm"
+               ></TextView>
+
+       </RelativeLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="400dp"
+        android:visibility="visible"
+        android:src="@drawable/ic_add_alert_black_24dp"
+        app:backgroundTint="#FF9800"
+
+        />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

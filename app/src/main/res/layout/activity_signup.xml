@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".SignupActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_below="@id/textView6"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:id="@+id/edit_text_password4"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true">
+        <EditText
+            android:textCursorDrawable="@null"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="25dp"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:id="@+id/edit_text_name"
+            android:layout_width="match_parent"
+            android:layout_below="@id/textView6"
+            android:layout_centerHorizontal="true"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:inputType="textPersonName"
+            android:background="@drawable/input_bg_rounded_corners"
+            android:hint="Full name" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_below="@+id/edit_text_password4"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:id="@+id/edit_text_password3"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true">
+        <EditText
+            android:textCursorDrawable="@null"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="25dp"
+            android:id="@+id/edit_text_email"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/edit_text_name"
+            android:layout_marginTop="10dp"
+            android:hint="email"
+            android:background="@drawable/input_bg_rounded_corners"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_below="@+id/edit_text_password3"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:id="@+id/edit_text_password1"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        app:passwordToggleEnabled="true">
+        <EditText
+            android:textCursorDrawable="@null"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginRight="28dp"
+            android:id="@+id/edit_text_password"
+            android:layout_width="match_parent"
+            android:hint="password"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/edit_text_email"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/input_bg_rounded_corners"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="28dp"
+        android:layout_below="@+id/edit_text_password1"
+    android:layout_width="match_parent"
+    android:id="@+id/edit_text_password2"
+    android:layout_height="50dp"
+    app:passwordToggleEnabled="true">
+    <EditText
+        android:textCursorDrawable="@null"
+            android:id="@+id/editText5"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/edit_text_password1"
+            android:layout_marginTop="10dp"
+            android:hint="Confirm Password"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:inputType="textPassword"
+            android:background="@drawable/input_bg_rounded_corners" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="28dp"
+        android:layout_below="@+id/edit_text_password2"
+        android:layout_width="match_parent"
+        android:id="@+id/edit_text_password5"
+        android:layout_height="50dp">
+
+    <EditText
+        android:textCursorDrawable="@null"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:id="@+id/edit_text_phone"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/edit_text_password2"
+            android:layout_height="35dp"
+            android:layout_marginTop="6dp"
+            android:inputType="phone"
+            android:hint="@string/phone"
+            android:layout_centerHorizontal="true"
+            android:maxLength="11"
+            android:background="@drawable/input_bg_rounded_corners" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/first"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/edit_text_password5"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/input_bg_rounded_corners" />
+
+
+    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/second"
+            android:layout_below="@id/first"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:background="@drawable/input_bg_rounded_corners"
+            />
+
+        <Button
+            android:id="@+id/button_register"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Register"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_bg_rounded_corners"
+            android:layout_below="@id/second"
+            android:textAllCaps="false" />
+    <RelativeLayout
+        android:layout_below="@+id/button_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textViewl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already a User? "
+        android:layout_toLeftOf="@id/join"
+        android:layout_marginTop="15dp"
+        android:textSize="15dp"
+        android:textColor="#FEFEFF"/>
+    <TextView
+        android:id="@+id/join"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="-25dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="15dp"/>
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="15dp"
+        android:layout_toRightOf="@id/join"
+        android:textColor="#47AF06"
+        android:textStyle="bold"
+        android:text="Log In!" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+       android:layout_toRightOf="@+id/button_register"
+        android:layout_below="@id/second"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+
+        />
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:id="@+id/imageholders"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:gravity="center"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:src="@color/colorAccent"
+            android:layout_centerInParent="true"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageholder"
+        android:layout_centerInParent="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/camera" />
+    </RelativeLayout>
+</LinearLayout>
+    <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageholders"
+            android:layout_centerHorizontal="true"
+            android:textSize="15dp"
+            android:textColor="#fff"
+            android:text="Click icon to select a profile picture" />
+    <TextView
+        android:id="@+id/balancemain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="0dp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "285873985190",
+    "firebase_url": "https://e-course-rep.firebaseio.com",
+    "project_id": "e-course-rep",
+    "storage_bucket": "e-course-rep.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:285873985190:android:2384f59ee8b8605c964667",
+        "android_client_info": {
+          "package_name": "com.example.reno"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "285873985190-pi3sclma397d05tq96qcr6sqp1oma4e5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.reno",
+            "certificate_hash": "9d8d8a69126136a45c9ab31bfd47c707b44cc3c6"
+          }
+        },
+        {
+          "client_id": "285873985190-06jaem9n1votplcuhj46cbh55o2k1qpc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArhJ6ECuJzdwXJu4kalf294aWSacpyHKA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "285873985190-06jaem9n1votplcuhj46cbh55o2k1qpc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

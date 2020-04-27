@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="10dp"
+    android:id="@+id/fore">
+
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardCornerRadius="@dimen/activity_vertical_margin"
+        >
+
+        <RelativeLayout
+            android:id="@+id/notifybackground"
+            android:layout_width="match_parent"
+            android:background="#ff0000"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/delete_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/ic_delete" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="3dp"
+                android:layout_toLeftOf="@id/delete_icon"
+                android:text="Delete"
+                android:textColor="#fff"
+                android:textSize="13dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/notifyforeground"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/contain"
+                android:layout_toRightOf="@id/timeImage"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                >
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_weight="100"
+
+    >
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_weight="70"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/timeImage"
+
+                    android:text="TITLEyyyyyyyyyyyyyyy"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="2dp"
+                    android:maxLines="1"
+                    android:fontFamily="sans-serif-black"
+                    android:textColor="#000000"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/navTitle"
+                    />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="30"
+        android:layout_below="@id/timeImage"
+        android:text="Apr 12:20202 254"
+        android:maxLines="2"
+
+        android:textSize="14sp"
+        android:layout_marginLeft="2dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#000000"
+        android:padding="5dp"
+        android:id="@+id/navTime"
+        android:layout_centerHorizontal="true"
+
+        />
+
+
+</LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:layout_below="@id/timeImage"
+                    android:text="YOUR MESSAGE HERE"
+                    android:textSize="18dp"
+                    android:padding="10dp"
+                    android:maxLines="2"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/navMessage"
+                    />
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:padding="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/notification"
+                android:id="@+id/timeImage"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_rightarrow"
+                ></ImageView>
+<TextView
+    android:layout_width="5dp"
+    android:layout_height="5dp"
+    android:layout_below="@id/timeImage"
+    android:layout_marginLeft="5dp"
+    android:id="@+id/navId"
+    android:textColor="#FFFFFF"
+    android:visibility="invisible"
+    ></TextView>
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

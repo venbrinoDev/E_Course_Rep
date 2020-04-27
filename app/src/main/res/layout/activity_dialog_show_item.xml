@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".DialogShowItem">
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="20dp"
+    app:cardBackgroundColor="#F8F7F7"
+
+    >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+    <ImageView
+        android:id="@+id/head"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/clock"
+        />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/head"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="7dp"
+    android:textStyle="bold"
+    android:fontFamily="serif"
+    android:textColor="#020202"
+    android:textSize="10dp"
+    android:text="TYPE YOUR MESSAGE REMINDER"
+    />
+
+
+        <EditText
+           android:layout_below="@+id/head"
+            android:id="@+id/texting"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="45dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="#000000"
+            android:layout_centerHorizontal="true"
+            android:hint=" Type Message Here"
+             android:autofillHints="#40000000"
+            android:textColor="#000000"
+
+            android:textStyle="bold"
+            android:background="@drawable/fordailog"
+            android:padding="10dp"
+            android:fontFamily="serif-monospace"
+            android:textSize="14dp"
+            />
+
+
+
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:id="@+id/cancleButton"
+        android:layout_below="@id/texting"
+        android:layout_marginTop="25dp"
+        android:text="cancle"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/button"
+        />
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:id="@+id/okButton"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/texting"
+        android:layout_marginTop="25dp"
+        android:text="OK"
+
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="40dp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:textSize="15dp"
+
+        android:background="@drawable/button"
+        />
+
+</RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+</androidx.cardview.widget.CardView>

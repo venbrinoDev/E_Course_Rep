@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    tools:context=".AboutActivity">
+
+    <TextView
+        android:id="@+id/about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:fontFamily="sans-serif"
+        android:text="About The App"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="E-course-Rep is an application created with the soul purpose of helping students (Campus Students) be alert and informed by their CourseRep, so as to help them avoid missing practicals and other important information.\n
+\n But having completed this applicaton it has seen to be proven both effective in other areas.\n
+\n With many free messaging applications such as whatsapp and messenger, You may actually see no reason to use our services. So in few lines let me tell you what E-Course-Rep is all about. \nE-Course-Rep is a professional bulk messaging application, with a user friendly interface, this app can be used by even a child to perform any task, but with security feature, your account cannot be used to send messages not authorized by you, unless otherwise."
+        android:layout_below="@id/about"
+        />
+    <TextView
+        android:id="@+id/aboutdevelopers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:fontFamily="sans-serif"
+        android:text="About The Developers"
+        android:layout_marginTop="330dp"
+        android:layout_centerHorizontal="true"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Paystack">
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardViewtwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardElevation="@dimen/activity_vertical_margin"
+        android:layout_marginTop="0dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            >
+
+
+            <ImageView
+                android:id="@+id/paystakImage"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/paystackmain"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/paystakImage"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="serif"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="Please enter your details below"
+                />
+    <EditText
+        android:id="@+id/edit_email_address"
+        android:textCursorDrawable="@null"
+        android:textColor="#000000"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="110dp"
+        android:hint="@string/email"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/paystark"
+        android:imeOptions="actionNext"
+        android:inputType="textEmailAddress"
+        android:drawableRight="@drawable/ic_email_black_24dp"
+        android:drawablePadding="5dp"
+        android:drawableEnd="@drawable/ic_email_black_24dp"/>
+    <!-- Expiry Text for credit card number-->
+    <EditText
+        android:id="@+id/edit_card_number"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/edit_email_address"
+        android:textCursorDrawable="@null"
+        android:textColor="#000000"
+        android:hint="card number"
+      android:layout_marginTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/paystark"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:drawableRight="@drawable/ic_credit_card"
+        android:drawablePadding="5dp"
+        android:drawableEnd="@drawable/ic_credit_card"/>
+
+    <!-- Divider-->
+    <View
+        android:id="@+id/horizontal_divider"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:id="@+id/layout_expiry"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/edit_card_number"
+        android:background="@drawable/paystark"        >
+
+        <!-- Expiry Text -->
+
+        <!-- EditText for expiry month -->
+        <EditText
+            android:id="@+id/edit_expiry_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="MM"
+            android:textCursorDrawable="@null"
+            android:textColor="#000000"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxEms="4"
+            android:maxLength="2"
+            android:maxLines="1"
+            android:padding="8dp" />
+
+        <!-- EditText for expiry year -->
+        <EditText
+            android:textCursorDrawable="@null"
+            android:textColor="#000000"
+            android:id="@+id/edit_expiry_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/edit_expiry_month"
+            android:hint="YY"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxEms="4"
+            android:maxLength="2"
+            android:maxLines="1"
+            android:padding="8dp" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@id/edit_expiry_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_today"
+            />
+    </RelativeLayout>
+
+    <!-- layout for cvv -->
+    <RelativeLayout
+        android:id="@+id/layout_cvv"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+              android:layout_marginTop="5dp"
+        android:layout_below="@id/edit_card_number"
+       android:layout_alignParentRight="true"
+       >
+
+        <!-- CVV text -->
+
+
+        <!-- EditText for cvv -->
+        <EditText
+            android:id="@+id/edit_cvv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:hint="CVC"
+            android:textCursorDrawable="@null"
+            android:textColor="#000000"
+            android:background="@drawable/paystark"
+            android:maxLength="3"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:drawableRight="@drawable/ic_lock"
+            android:drawablePadding="5dp"
+            android:drawableEnd="@drawable/ic_lock"/>
+    </RelativeLayout>
+
+    <!--Pay Button -->
+    <Button
+        android:id="@+id/pay_button"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginBottom="10dp"
+        android:background="#EB8D05"
+        android:text="OK"
+        android:layout_alignParentRight="true"
+        android:textColor="#fff"
+        android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/cancle_button"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="280dp"
+                android:layout_marginBottom="10dp"
+                android:background="#EB8D05"
+                android:text="Cancle"
+                android:layout_alignParentLeft="true"
+                android:textColor="#fff"
+                android:textSize="15dp" />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

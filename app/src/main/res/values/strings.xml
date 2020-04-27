@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">E-Course-Rep</string>
+    <string name="full_name">full name</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="phone">phone</string>
+    <string name="register">Register</string>
+    <string name="input_error_name">name required</string>
+    <string name="input_error_email">email required</string>
+    <string name="input_error_password">password required</string>
+    <string name="input_error_phone">phone required</string>
+    <string name="input_error_password_length">password should be atleast 6 characters long</string>
+    <string name="input_error_phone_invalid">enter a valid phone number</string>
+    <string name="registration_success">Registered Successfully</string>
+    <string name="input_error_email_invalid">enter a valid email</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Notifications</string>
+    <string name="menu_slideshow">Set Reminder</string>
+    <string name="menu_tools">Add Number</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">FeedBack</string>
+    <string name="title_activity_test">test</string>
+    <string name="termscond">
+        <a href="https://www.facebook.com">Terms-Conditions</a>
+    </string>
+    <string-array name="spinner_items">
+        <item>From Phone</item>
+    </string-array>
+</resources>

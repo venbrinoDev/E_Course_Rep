@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+         />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        app:srcCompat="@color/colorPrimary"/>
+
+    <GridLayout
+     android:layout_below="@+id/text_home"
+        android:id="@+id/mainGrid"
+        android:layout_width="match_parent"
+        android:layout_height="430dp"
+        android:layout_marginTop="80dp"
+        android:layout_weight="6"
+        android:alignmentMode="alignMargins"
+        android:columnCount="2"
+        android:columnOrderPreserved="false"
+        android:paddingTop="15dp"
+        android:rowCount="3">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="30dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+
+            app:cardBackgroundColor="@android:color/background_light"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp">
+
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+
+                >
+
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/sendmessage"
+                    />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Send Message"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+
+                    android:textColor="#000000"
+
+
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="30dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:cardBackgroundColor="@android:color/background_light"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp">
+
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+
+                >
+
+                <ImageView
+                    android:id="@+id/addevent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/messsagehistroy"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Message History"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+
+                    android:textColor="#000000"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="30dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="20dp"
+
+            app:cardBackgroundColor="@android:color/background_light"
+            app:cardCornerRadius="16dp"
+            android:layout_marginBottom="13dp"
+            app:cardElevation="8dp">
+
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+
+                >
+
+                <ImageView
+                    android:id="@+id/addnumbers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/messagepin"
+                     />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Get Message Credit"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+
+                    android:textColor="#000000"/>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="30dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="13dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="@android:color/background_light"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp">
+
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+
+                >
+
+                <ImageView
+                    android:id="@+id/aboutbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/addnumbers"
+                    />
+
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Number"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+
+                    android:textColor="#000000"/>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </GridLayout>
+
+
+
+    <TextView
+        android:id="@+id/te"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="E-Course-Rep"
+        android:layout_marginTop="5dp"
+        android:fontFamily="serif"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        />
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/red"
+        app:cardCornerRadius="5dp"
+        android:id="@+id/show"
+        app:cardElevation="8dp"
+        android:layout_marginTop="60dp"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        android:layout_marginRight="16dp"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Balance: 0.00 NGN"
+            android:id="@+id/balancevalue"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:textSize="15dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            />
+    </androidx.cardview.widget.CardView>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/text_home"
+    android:layout_marginTop="8dp"
+    android:padding="2dp"
+    android:layout_marginLeft="10dp"
+    >
+<ImageView
+   android:layout_centerHorizontal="true"
+    android:id="@+id/RemindetButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_home_reminder"
+    ></ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Reminder"
+        android:layout_below="@id/RemindetButton"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:textSize="15dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        />
+</RelativeLayout>
+</RelativeLayout>

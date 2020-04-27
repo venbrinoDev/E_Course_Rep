@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SignoutActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_marginLeft="2dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/splashingb" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:layout_toRightOf="@+id/imageView"
+                android:text="E Course Rep"
+                android:textStyle="bold"
+                android:textColor="#000" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Electronic Course Rep"
+                android:textSize="16sp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:id="@+id/moodtext"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_below="@id/title" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ResetPassword"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardBackgroundColor="@color/colorPrimary"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/colorAccent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/passwordHeading"
+                android:text="Password Manager"
+                ></TextView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/setMessagingPin"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_below="@id/passwordHeading"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:focusable="true"
+                android:layout_marginTop="10dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="@dimen/activity_vertical_margin"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <com.github.florent37.expansionpanel.ExpansionHeader
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        app:expansion_headerIndicator="@id/headerIndicatotr"
+                        app:expansion_layout="@id/expansionLayout"
+                        app:expansion_toggleOnClick="true">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Set Messaging Pin"
+                            android:textColor="@color/colorGreen"
+                            android:textStyle="bold"/>
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:id="@+id/headerIndicatotr"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_marginLeft="16dp"
+                            app:srcCompat="@drawable/ic_expansion_header_indicator_grey_24dp"/>
+                    </com.github.florent37.expansionpanel.ExpansionHeader>
+
+                    <com.github.florent37.expansionpanel.ExpansionLayout
+                        android:id="@+id/expansionLayout"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:background="#F1EEEE">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:padding="5dp"
+                            android:layout_height="wrap_content">
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_marginTop="10dp"
+                                android:textAlignment="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/SetMessage"
+                                app:passwordToggleEnabled="true"
+                                app:hintTextColor="@color/black"
+                                android:layout_marginBottom="10dp"
+                                android:layout_centerHorizontal="true">
+                                <EditText
+                                    android:textCursorDrawable="@null"
+                                    android:layout_width="match_parent"
+                                    android:layout_marginLeft="25dp"
+                                    android:layout_marginRight="28dp"
+                                    android:layout_height="35dp"
+                                    android:id="@+id/etdSetMessagingPin"
+                                    android:inputType="textPassword"
+                                    android:background="@drawable/input_bg_rounded_corners"
+                                    android:hint="Enter Login Password"
+                                    android:paddingLeft="7dp"
+                                    android:paddingRight="7dp"
+                                    android:layout_centerHorizontal="true" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/SetMessage"
+                                android:id="@+id/floatingSetMessagingPin"
+                                app:backgroundTint="@color/colorPrimary"
+                                android:layout_margin="5dp"
+                                android:src="@drawable/ic_arrow_forward"
+                                android:layout_alignParentEnd="true"
+                                ></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+                        </RelativeLayout>
+                    </com.github.florent37.expansionpanel.ExpansionLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_below="@+id/setMessagingPin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:focusable="true"
+                android:id="@+id/ResetMessagingPin"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="@dimen/activity_vertical_margin"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <com.github.florent37.expansionpanel.ExpansionHeader
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        app:expansion_headerIndicator="@id/headerIndicator3"
+                        app:expansion_layout="@id/expansionLayout3"
+                        app:expansion_toggleOnClick="true">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Reset Messaging Pin"
+                            android:textColor="@color/colorGreen"
+                            android:textStyle="bold"/>
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:id="@+id/headerIndicator3"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_marginLeft="16dp"
+                            app:srcCompat="@drawable/ic_expansion_header_indicator_grey_24dp"/>
+                    </com.github.florent37.expansionpanel.ExpansionHeader>
+
+                    <com.github.florent37.expansionpanel.ExpansionLayout
+                        android:id="@+id/expansionLayout3"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:background="#F1EEEE">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:padding="5dp"
+                            android:layout_height="wrap_content">
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_marginTop="10dp"
+                                android:textAlignment="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/upgo"
+                                app:passwordToggleEnabled="true"
+                                app:hintTextColor="@color/black"
+                                android:inputType="textPassword"
+                                android:layout_marginBottom="10dp"
+                                android:layout_centerHorizontal="true">
+                                <EditText
+                                    android:textCursorDrawable="@null"
+                                    android:layout_width="match_parent"
+                                    android:layout_marginLeft="25dp"
+                                    android:layout_marginRight="28dp"
+                                    android:layout_height="35dp"
+                                    android:id="@+id/edtResetMessagingPin"
+                                    android:background="@drawable/input_bg_rounded_corners"
+                                    android:hint="Enter previous Messaging Pin"
+                                    android:maxLength="4"
+                                    android:inputType="numberPassword"
+                                    android:paddingLeft="7dp"
+                                    android:paddingRight="7dp"
+                                    android:layout_centerHorizontal="true" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/upgo"
+                                app:backgroundTint="@color/colorPrimary"
+                                android:layout_margin="5dp"
+                                android:id="@+id/floatingResetMessage"
+                                android:src="@drawable/ic_arrow_forward"
+                                android:layout_alignParentEnd="true"
+                                ></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+                        </RelativeLayout>
+
+                    </com.github.florent37.expansionpanel.ExpansionLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_below="@+id/ResetMessagingPin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/ResetLoginPin"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="@dimen/activity_vertical_margin"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <com.github.florent37.expansionpanel.ExpansionHeader
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        app:expansion_headerIndicator="@id/headerIndicator4"
+                        app:expansion_layout="@id/expansionLayout4"
+                        app:expansion_toggleOnClick="true">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Reset Login Password"
+                            android:textColor="@color/colorGreen"
+                            android:textStyle="bold"/>
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:id="@+id/headerIndicator4"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_marginLeft="16dp"
+                            app:srcCompat="@drawable/ic_expansion_header_indicator_grey_24dp"/>
+                    </com.github.florent37.expansionpanel.ExpansionHeader>
+
+                    <com.github.florent37.expansionpanel.ExpansionLayout
+                        android:id="@+id/expansionLayout4"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:background="#F1EEEE">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:padding="5dp"
+                            android:layout_height="wrap_content">
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_marginTop="10dp"
+                            android:textAlignment="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/reset"
+                            app:passwordToggleEnabled="true"
+                            app:hintTextColor="@color/black"
+                            android:layout_marginBottom="10dp"
+                            android:layout_centerHorizontal="true">
+                            <EditText
+                                android:textCursorDrawable="@null"
+                                android:layout_width="match_parent"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginRight="28dp"
+                                android:layout_height="35dp"
+                                android:background="@drawable/input_bg_rounded_corners"
+                                android:hint="Enter Previous Password"
+                                android:paddingLeft="7dp"
+                                android:id="@+id/edtResetLoginPin"
+                                android:paddingRight="7dp"
+                                android:inputType="textPassword"
+                                android:layout_centerHorizontal="true" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/reset"
+                            app:backgroundTint="@color/colorPrimary"
+                            android:id="@+id/floatingResetLoginPin"
+                            android:layout_margin="5dp"
+                            android:src="@drawable/ic_arrow_forward"
+                           android:layout_alignParentEnd="true"
+                            ></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+                        </RelativeLayout>
+                    </com.github.florent37.expansionpanel.ExpansionLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardVi"
+        android:layout_below="@+id/ResetPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exit"
+            android:id="@+id/signouttext"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enjoy your Stay dear"
+                android:textStyle="bold"
+                android:layout_marginRight="20dp"
+               android:layout_alignBottom="@id/button3"
+                android:layout_alignParentRight= "true"
+                android:textColor="@color/black"
+                />
+
+    <Button
+        android:layout_below="@id/signouttext"
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</ScrollView>
