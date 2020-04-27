@@ -52,8 +52,8 @@ public class MyFirebaseInstanceService extends FirebaseMessagingService {
 
         }
         if (remoteMessage.getNotification()!=null)  {
-            String imageUrl="";
-            showNotification(remoteMessage.getNotification().getTitle(), remoteMessage.getNotification().getBody(),imageUrl);
+
+            NotificationshowNotification(remoteMessage.getNotification().getTitle(), remoteMessage.getNotification().getBody());
 
         }
 
@@ -121,5 +121,68 @@ public class MyFirebaseInstanceService extends FirebaseMessagingService {
 
     }
 
+
+
+    private void NotificationshowNotification(String title, String body){
+
+
+        NotificationDBHelper notificationDBHelper = new NotificationDBHelper(this);
+        String saveTitle=title;
+        String saveBody=body;
+
+        //Creating uniqueId
+        String saveTime = java.text.DateFormat.getDateTimeInstance().format(new Date());
+        long randomTime=System.currentTimeMillis();
+        long  randomNumer=new Random().nextLong();
+        long SumOfRandom=randomTime+randomNumer;
+        String identifier=String.valueOf(SumOfRandom);
+        String ImageUrl="imageUrl";
+
+        //Inserting Data
+        boolean isInserted =notificationDBHelper.insertData(saveTitle,saveBody,saveTime,identifier,ImageUrl);
+        if(isInserted == true){
+            Log.d("messing", "true");
+        }else{
+            Log.d("messing", "false");
+        }
+
+        NotificationManager notificationManager =(NotificationManager)getSystemService(Context.NOTIFICATION_SERVICE);
+        String NOTIFICATION_CHANNEL_ID="com.example.reno.test";
+        if (Build.VERSION.SDK_INT>=Build.VERSION_CODES.O){
+            NotificationChannel notificationChannel= new NotificationChannel(NOTIFICATION_CHANNEL_ID,"notification",
+                    NotificationManager.IMPORTANCE_DEFAULT );
+            notificationChannel.setDescription("ECourse Rep");
+            notificationChannel.enableLights(true);
+            notificationChannel.setLightColor(Color.BLUE);
+            notificationChannel.enableLights(true);
+            notificationManager.createNotificationChannel(notificationChannel);
+
+        }
+
+
+        Intent startApp=new Intent(this,HomeActivity.class);
+        PendingIntent StartPending=PendingIntent.getActivity(this,110101,startApp,PendingIntent.FLAG_UPDATE_CURRENT);
+
+        final NotificationCompat.Builder notificationBuilder= new NotificationCompat.Builder(this,NOTIFICATION_CHANNEL_ID);
+        Uri uri= RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+        notificationBuilder.setAutoCancel(true)
+                .setDefaults(Notification.DEFAULT_ALL)
+                .setWhen(System.currentTimeMillis())
+                .setVibrate(new long []{1000,1000,1000,1000,1000})
+                .setSmallIcon(R.drawable.ic_notifications)
+                .setLargeIcon(BitmapFactory.decodeResource(getResources(),R.drawable.notification))
+                .setStyle(new NotificationCompat.BigTextStyle().bigText(body))
+                .setContentTitle(title)
+                .setContentInfo("info")
+                .setContentIntent(StartPending)
+                .setPriority(NotificationCompat.PRIORITY_MAX)
+                .setContentText(body)
+                .setSound(uri);
+
+
+        int Ran= new Random().nextInt();
+        notificationManager.notify(Ran,notificationBuilder.build());
+
+    }
 }
 
