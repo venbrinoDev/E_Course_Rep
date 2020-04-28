@@ -9,9 +9,9 @@
 * [Feautures](#features)
 
 ## General info
- Student  in rural areas dont have a smart phone to recieve message from the internet or dont even have a good internet service to
-get vital information..Also course representative get frustrated trying to send mesage to their student through their normal sms app
-E_Course_Rep allow u send message conviently to reach all student...
+Student  in some universities  areas dont have a smart phone to recieve message from the internet or dont have a good internet service to get vital information..Also course representative get frustrated trying to send mesage to their student through their normal sms app 
+due to lack of oganize student number..and high level of cost of sending.....
+E_Course_Rep allow u send message conviently to reach all student at the same time..ensuring all student get infomation about a   particular event
 
 
 ## Installation
