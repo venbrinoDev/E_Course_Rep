@@ -4,15 +4,40 @@
 
 ## Table of contents
 * [Genral info](#general_info)
-* [Setup](#setup)
+* [Installation](#Installation)
 * [Version control](#version_control)
 * [Technologies Used](#technology_used)
-* [feautures](#features)
-* [screenshot](#screeshot)
-* [inspiration](#inspiration)
+* [Feautures](#features)
+* [Screenshot](#screeshot)
+* [Inspiration](#inspiration)
 
 ## General info
+Student basical in rural areas dont have a smart phone to recieve message from the internet or dont even have a good internet service to
+get vital information..Also course representative get frustrated trying to send mesage to their student through our local sms app 
 
+## Installation
+### Requirement
+* JDK version 8 or latest version
+* Andrid SDK 3 or latest version
+* Gradle version 3.0.5
+* Compile SDK version 29
+* minSDK verson 27
+* target sdk version 29
 
+## Version Control
+*  
+
+## Technology used
+* Andrioid Studio
+* Firebase
+* picasso Libaries
+* Volley Libaries
+
+## Feautures
+* Easy sms messging layout
+* Ability to set Alarm for upcoming event 
+* get Notification of event happening in the sociecty
+
+## Screenshot
 
 Youtube: https://youtu.be/PpYcBWf1tFU
