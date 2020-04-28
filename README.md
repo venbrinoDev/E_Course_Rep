@@ -5,10 +5,8 @@
 ## Table of contents
 * [Genral info](#general_info)
 * [Installation](#Installation)
-* [Version control](#version_control)
 * [Technologies Used](#technology_used)
 * [Feautures](#features)
-* [Inspiration](#inspiration)
 
 ## General info
  Student  in rural areas dont have a smart phone to recieve message from the internet or dont even have a good internet service to
