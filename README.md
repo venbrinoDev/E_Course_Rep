@@ -8,12 +8,13 @@
 * [Version control](#version_control)
 * [Technologies Used](#technology_used)
 * [Feautures](#features)
-* [Screenshot](#screeshot)
 * [Inspiration](#inspiration)
 
 ## General info
-Student basical in rural areas dont have a smart phone to recieve message from the internet or dont even have a good internet service to
-get vital information..Also course representative get frustrated trying to send mesage to their student through our local sms app 
+ Student  in rural areas dont have a smart phone to recieve message from the internet or dont even have a good internet service to
+get vital information..Also course representative get frustrated trying to send mesage to their student through their normal sms app
+E_Course_Rep allow u send message conviently to reach all student...
+
 
 ## Installation
 ### Requirement
@@ -24,12 +25,11 @@ get vital information..Also course representative get frustrated trying to send 
 * minSDK verson 27
 * target sdk version 29
 
-## Version Control
-*  
-
 ## Technology used
 * Andrioid Studio
 * Firebase
+
+#### some libaries used
 * picasso Libaries
 * Volley Libaries
 
@@ -38,6 +38,8 @@ get vital information..Also course representative get frustrated trying to send 
 * Ability to set Alarm for upcoming event 
 * get Notification of event happening in the sociecty
 
-## Screenshot
+Upcoming Features
+* Automating app to send message sechuldue at a give time
 
+ ### Youtube  Video Link
 Youtube: https://youtu.be/PpYcBWf1tFU
