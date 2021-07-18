@@ -30,13 +30,7 @@ E_Course_Rep allow u send message conviently to reach all student at the same ti
 #### some libaries used
 * picasso Libaries
 * Volley Libaries
-
-## Author
-Agalaba Ifeanyi Precious 
-
-##Author 
-Agalaba Ifeanyi Precious
-
+* 
 ## Feautures
 * Easy sms messging layout
 * Ability to set Alarm for upcoming event 
@@ -45,5 +39,12 @@ Agalaba Ifeanyi Precious
 Upcoming Features
 * Automating app to send message sechuldue at a give time
 
+## ScreenShot
+
+
  ### Youtube  Video Link
 Youtube: https://youtu.be/PpYcBWf1tFU
+
+
+## Author
+Agalaba Ifeanyi Precious 
