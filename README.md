@@ -31,6 +31,9 @@ E_Course_Rep allow u send message conviently to reach all student at the same ti
 * picasso Libaries
 * Volley Libaries
 
+##Author 
+Agalaba Ifeanyi Precious
+
 ## Feautures
 * Easy sms messging layout
 * Ability to set Alarm for upcoming event 
