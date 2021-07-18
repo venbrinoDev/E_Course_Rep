@@ -39,8 +39,10 @@ E_Course_Rep allow u send message conviently to reach all student at the same ti
 Upcoming Features
 * Automating app to send message sechuldue at a give time
 
-## ScreenShot
-
+<h2 align="left">Screenshots</h2>
+<h4 align="center">
+<img src="images/e_course_mobile_one.png" width="30%" vspace="10" hspace="10">
+<img src="images/e_course_mobile_two.png" width="30%" vspace="10" hspace="10">
 
  ### Youtube  Video Link
 Youtube: https://youtu.be/PpYcBWf1tFU
